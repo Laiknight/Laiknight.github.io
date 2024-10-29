@@ -1,0 +1,9 @@
+/* Basepage.css */
+#typing-container {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
