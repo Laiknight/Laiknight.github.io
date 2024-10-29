@@ -116,6 +116,13 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Bulletin is a platform meant to help for schedule planning and organization. It is being created for the 2024 Congressional App Challenge and TSA Software Development competition. The app is being created with a group of 3 other people, Luis, our server developer, Colten, our Android developer, and Nora, our UI/UX developer.',
             date: 'Present',
             link: 'https://github.com/sneakyturtle2007/Bulletin'
+        },
+        {
+            image: '',
+            title: 'Local Market Radar',
+            description: 'Local Market Radar was a project meant for the TSA software development competition. It placed 3rd in state, and was meant for local stores to upload their inventory to a database, and for customers to search for items in their area.',
+            date: '2024-02-09',
+            link: ''
         }
     ];
 
@@ -152,40 +159,42 @@ document.addEventListener('DOMContentLoaded', () => {
     function createProjectElement(project) {
         const projectDiv = document.createElement('div');
         projectDiv.classList.add('project');
-
+    
         const img = document.createElement('img');
         img.src = project.image;
         img.alt = 'Project Image';
-
+    
         const title = document.createElement('h2');
         title.classList.add('title');
         title.textContent = project.title;
-
+    
         const expandableBox = document.createElement('div');
         expandableBox.classList.add('expandable-box');
-
+    
         const description = document.createElement('p');
         description.classList.add('description');
         description.textContent = project.description;
-
+    
         const date = document.createElement('p');
         date.classList.add('date');
         date.textContent = `Date Created: ${project.date}`;
-
-        const link = document.createElement('a');
-        link.href = project.link;
-        link.textContent = 'View Project';
-        link.classList.add('project-link');
-        link.target = '_blank'; // Open link in a new tab
-
+    
         expandableBox.appendChild(description);
         expandableBox.appendChild(date);
-        expandableBox.appendChild(link);
-
+    
+        if (project.link) {
+            const link = document.createElement('a');
+            link.href = project.link;
+            link.textContent = 'View Project';
+            link.classList.add('project-link');
+            link.target = '_blank'; // Open link in a new tab
+            expandableBox.appendChild(link);
+        }
+    
         const expandBtn = document.createElement('button');
         expandBtn.classList.add('expand-btn');
         expandBtn.textContent = 'Expand';
-
+    
         expandBtn.addEventListener('click', () => {
             if (expandableBox.style.display === 'none' || expandableBox.style.display === '') {
                 expandableBox.style.display = 'block';
@@ -195,12 +204,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 expandBtn.textContent = 'Expand';
             }
         });
-
+    
         projectDiv.appendChild(img);
         projectDiv.appendChild(title);
         projectDiv.appendChild(expandableBox);
         projectDiv.appendChild(expandBtn);
-
+    
         return projectDiv;
     }
 
