@@ -7,23 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoProjectsContainer = document.getElementById('video-projects');
     const photographyProjectsContainer = document.getElementById('photography-projects');
     const miscProjectsContainer = document.getElementById('misc-projects');
-
-    const currentProjects = [
-        {
-            image: 'Images/Current_Projects/KJ.png',
-            title: 'Knights Journey',
-            description: 'Knights Journey is a game that I am currently working on. It is a top down rogue-like game where you play as a knight. The whole map is procedurally generated, causing for the game to different every time, and there will be numerous bosses, enemies, and dungeon areas.',
-            date: '',
-            link: ''
-        },
-        {
-            images: 'Images/Software_Development/BULL.png',
-            title: 'Bulletin',
-            description: 'Bulletin is a platform meant to help for schedule planning and organization. It is being created for the TSA Software Development competition. The app is being created with a group of 3 other people, Luis, our server developer, Colten, our Android developer, and Nora, our UI/UX developer, and myself, the website builder.',
-            date: '',
-            link: 'https://github.com/sneakyturtle2007/Bulletin'
-        }
-    ];
     
     const gameDevProjects = [
         {
@@ -133,12 +116,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add more project objects here
     ];
 
-    const softwareDevProjects = [3.08
+    const softwareDevProjects = [
         {
             image: 'Images/Software_Development/BULL.png',
             title: 'Bulletin',
             description: 'Bulletin is a platform meant to help for schedule planning and organization. It is being created for the 2024 Congressional App Challenge and TSA Software Development competition. The app is being created with a group of 3 other people, Luis, our server developer, Colten, our Android developer, and Nora, our UI/UX developer.',
-            date: 'present',
+            date: '',
             link: 'https://github.com/sneakyturtle2007/Bulletin'
         },
         {
@@ -273,17 +256,17 @@ document.addEventListener('DOMContentLoaded', () => {
         return projectDiv;
     }
 
-    function appendProjects(container, projects, isVideoProject = false, currentProjectsContainerTemp = currentProjectsContainer) {
+    function appendProjects(container, projects, isVideoProject = false) {
         projects.forEach(project => {
-            const projectElement = createProjectElement(project, isVideoProject);
-            if(project.date == ''){
-                currentProjectsContainerTemp.appendChild(projectElement); 
+            if(project.date == '' && currentProjects && currentProjectsContainer)
+            {
+                currentProjectsContainer.appendChild(createProjectElement(project, isVideoProject));
             }
+            const projectElement = createProjectElement(project, isVideoProject);
             container.appendChild(projectElement);
         });
     }
 
-    //appendProjects(currentProjectsContainer, currentProjects);
     appendProjects(gameDevProjectsContainer, gameDevProjects);
     appendProjects(softwareDevProjectsContainer, softwareDevProjects);
     appendProjects(videoProjectsContainer, videoProjects, true);
