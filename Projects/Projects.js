@@ -23,6 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
             link: 'https://semicolongames.itch.io/a-game-is-called-a-game'
         },
         {
+            image: 'Images/Game_Development/PB.png',
+            title: 'Package Boys',
+            description: 'Package Boys was the first VR game dev project that I had ever made. It was created for my Game Development class in 2024, with my good friend Colten. This project required a bunch of research and various other strategies to get it complete, but it was a lot of fun to make, even if it ended up incomplete.',
+            date: '2024-05-13',
+        },
+        {
             image:'Images/Game_Development/MA.png',
             title:'Mid Ages',
             description:'Made for the 2024 TSA Video Game Design competition. The theme was high fantasy, and the game was created with a group of 3 other people. All the art was done by Nora, level design and coding by Colten and I, and voice acting/sound effects by Carson.',
@@ -122,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Local Market Radar',
             description: 'Local Market Radar was a project meant for the TSA software development competition. It placed 3rd in state, and was meant for local stores to upload their inventory to a database, and for customers to search for items in their area.',
             date: '2024-02-09',
-            link: ''
+            link: 'https://github.com/sneakyturtle2007/Local_Market_Radar'
         }
     ];
 
