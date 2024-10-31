@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const videoProjects = [
         {
-            videoEmbed: '\Videos\Intro.mp4',
+            videoEmbed: 'https://youtube.com/embed/ZSOnn43gpjM',
             title: 'Living Machines',
             description: 'A video essay over Living Machines.',
             date: ''
