@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function appendProjects(container, projects, isVideoProject = false) {
         projects.forEach(project => {
-            if(project.date == '' && currentProjects && currentProjectsContainer)
+            if(project.date == '' && currentProjectsContainer)
             {
                 currentProjectsContainer.appendChild(createProjectElement(project, isVideoProject));
             }
