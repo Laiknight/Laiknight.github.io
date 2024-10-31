@@ -135,6 +135,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const videoProjects = [
         {
+            videoEmbed: '\Videos\Intro.mp4',
+            title: 'Living Machines',
+            description: 'A video essay over Living Machines.',
+            date: ''
+        },
+        {
             videoEmbed: 'https://www.youtube.com/embed/CTBnr3IT1yI',
             title: 'Bulletin Congressional App Challenge Video',
             description: 'The recording of the actual video was done in the parking lot of the school, with all editing done by me, and the voice over being done by Luis.',
