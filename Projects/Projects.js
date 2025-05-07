@@ -10,6 +10,34 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const gameDevProjects = [
         {
+            image: 'Images/Game_Development/CD.png',
+            title: 'Computer Destroyer',
+            description: 'Computer Destroyer was made in one night before the submission deadline for Mr. Wooden\'s class. It is a top down game where you play as a cowboy with a chicken wing who destroys computers.',
+            date: '2025-02-24',
+            link: 'https://semicolongames.itch.io/computer-destroyer'
+        },
+        {
+            image: 'Images/Game_Development/HC.png',
+            title: 'Human Control',
+            description: 'Human Control is a game made for the 2024-2025 TSA Video Game Design competition. Inside of the game, you play as 4 aliens who control a human body. The goal of the game is to destroy the planet and win. This game was entirely coded by myself inside of Unity, and the art was made by Colten and Carson.',
+            date: '2025-03-15',
+            link: 'https://semicolongames.itch.io/human-control'
+        },
+        {
+            image: 'Images/Game_Development/AWAS.png',
+            title: 'Avoid Wooden\'s Work Simulator',
+            description: 'This game was made in about 6 hours for Mr. Wooden\'s class. It was a joke game making fun of people who would play games on their phones in class instead of paying attention.',
+            date: '2025-01-31',
+            link: 'https://semicolongames.itch.io/avoiding-woodens-work-simulator'
+        },
+        {
+            image: 'Images/Game_Development/SDBF.png',
+            title: 'Shadow Day: Black Friday',
+            description: 'This was a game made in about 4 days for the Francis Tuttle Technology Center\'s Shadow Day event. It was made by my friend Colten and I and was presented to the middle schoolers who attended. ',
+            date: '2025-01-16',
+            link: 'https://semicolongames.itch.io/shadow-day-black-friday'
+        },
+        {
             image: 'Images/Game_Development/ZS.png',
             title: 'Zombie Survival',
             description: 'This was a demo project for a zombie survival game. The game was built using Unity and C#. The concept of the game was to survive as long as possible while buying upgrades and becoming stronger.',
@@ -118,10 +146,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const softwareDevProjects = [
         {
+            image: 'Images/Placeholder.png',
+            title: 'Project Cordon',
+            description: 'Project Cordon is a project that is being build for OG&E through Francis Tuttle Technology Center. Not much can be said about the project, but my team is Nora Reese and Carson Lepik',
+            date: ''
+        },
+        {
             image: 'Images/Software_Development/BULL.png',
             title: 'Bulletin',
             description: 'Bulletin is a platform meant to help for schedule planning and organization. It is being created for the 2024 Congressional App Challenge and TSA Software Development competition. The app is being created with a group of 3 other people, Luis, our server developer, Colten, our Android developer, and Nora, our UI/UX developer.',
-            date: '',
+            date: '2025-04-11',
             link: 'https://github.com/sneakyturtle2007/Bulletin'
         },
         {
@@ -137,8 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             videoEmbed: 'https://youtube.com/embed/ZSOnn43gpjM',
             title: 'Living Machines',
-            description: 'A video essay over Living Machines.',
-            date: ''
+            description: 'A video essay over Living Machines. This video was deprecated due to a lack of research or information on the subject at hand.',
+            date: '2025-01-01'
         },
         {
             videoEmbed: 'https://www.youtube.com/embed/CTBnr3IT1yI',
